@@ -24,7 +24,7 @@
 │    │
 │    └── server
 │        └── APIcalls.js # express server.
-│        └── index.js # express server.
+│        └── MockAPI.js # express server.
 │        └── index.js # express server.
 └── __test__ 
         └── formHandler.test.js # tests handleSubmit function .
