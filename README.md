@@ -23,9 +23,12 @@
 │    │    └── index.js
 │    │
 │    └── server
+│        └── APIcalls.js # express server.
+│        └── index.js # express server.
 │        └── index.js # express server.
 └── __test__ 
-        └── handleSubmit.test.js # tests handleSubmit function .
+        └── formHandler.test.js # tests handleSubmit function .
+        └── nameChecker.test.js # tests handleSubmit function .
 ```
 ## Table of Contents
 
@@ -45,7 +48,13 @@ npm install
 start the App:
 
 ```bash
-npm install start
+npm install 
+```
+```bash
+npm run build-dev
+```
+```bash
+npm run build-prod
 ```
  
  <h2 align="center">Configrations</h2>
@@ -89,3 +98,8 @@ checkForName(userInput)
 * Returns false if userInput is not an actual url.
 
  <h2 align="center">Testing</h2>
+ start the test:
+
+```bash
+npm run test 
+```
