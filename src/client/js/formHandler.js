@@ -29,8 +29,18 @@ function handleSubmit(event) {
         })
     })
     .then(function(res) {
-    document.getElementById('results').innerHTML = `here is one of this article concepts "${res.concept_list[0].form}"`
-    }).catch(error=> console.log(error))
+        document.getElementById("irony").innerHTML = `Irony: ${res.irony}`
+        document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`
+        document.getElementById('polarity').innerHTML = 'Polarity: '+ Client.polarityChecker(res.score_tag)
+        document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`
+        document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`
+    }).catch(error=> {console.log(error)
+        document.getElementById("irony").innerHTML = `Irony: `
+        document.getElementById("confidence").innerHTML = `Confidence: `
+        document.getElementById('polarity').innerHTML = 'Polarity: '
+        document.getElementById("agreement").innerHTML = `Agreement: `
+        document.getElementById("subjectivity").innerHTML = `Subjectivity: `
+    })
 }
 
 export { handleSubmit }
