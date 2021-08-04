@@ -12,6 +12,7 @@
 │    │    └── js
 │    │    │    └── formHandler.js
 │    │    │    └── nameChecker.js
+│    │    │    └── polarityChecker.js
 │    │    └── styles
 │    │    │    └── base.scss
 │    │    │    └── footer.scss
@@ -26,6 +27,9 @@
 │        └── index.js # express server.
 └── __test__ 
         └── handleSubmit.test.js # tests handleSubmit function .
+        └── handleSubmit.test.js # tests handleSubmit function .
+        └── polarityChecker.test.js # tests handleSubmit function .
+        
 ```
 ## Table of Contents
 
@@ -40,6 +44,15 @@
 
 ```bash
 npm install 
+```
+```bash
+npm run build-dev 
+```
+```bash
+npm run build-prod 
+```
+```bash
+npm start 
 ```
 
 start the App:
@@ -65,6 +78,7 @@ npm install start
  
 * [`handleSubmit`](#handleSubmit)
 * [`checkForName`](#checkForName)
+* [`polarityChecker`](#checkForName)
 
 ### `handleSubmit`
 
@@ -88,4 +102,18 @@ checkForName(userInput)
 * Returns true if the userInput attribute is an actual URL `
 * Returns false if userInput is not an actual url.
 
+### `polarityChecker`
+
+Method Signature:
+
+```js
+polarityChecker()
+```
+
+* Returns polarity value
+
  <h2 align="center">Testing</h2>
+ 
+```bash
+npm run test
+```
