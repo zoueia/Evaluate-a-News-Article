@@ -27,8 +27,8 @@
 │        └── index.js # express server.
 └── __test__ 
         └── handleSubmit.test.js # tests handleSubmit function .
-        └── handleSubmit.test.js # tests handleSubmit function .
-        └── polarityChecker.test.js # tests handleSubmit function .
+        └── nameChecker.test.js # tests nameChecker function .
+        └── polarityChecker.test.js # tests polarityChecker function .
         
 ```
 ## Table of Contents
@@ -45,6 +45,10 @@
 ```bash
 npm install 
 ```
+
+
+start the App:
+
 ```bash
 npm run build-dev 
 ```
@@ -53,12 +57,6 @@ npm run build-prod
 ```
 ```bash
 npm start 
-```
-
-start the App:
-
-```bash
-npm install start
 ```
  
  <h2 align="center">Configrations</h2>
