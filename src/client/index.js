@@ -15,6 +15,5 @@ alert("I EXIST")
 export {
     checkForName,
     handleSubmit,
-    polarityChecker    
+    polarityChecker
 }
-
