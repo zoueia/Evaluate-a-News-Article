@@ -7,7 +7,7 @@ function handleSubmit(event) {
 
     const formdata = new FormData();
     formdata.append("lang", "en");  // 2-letter code, like en es fr ...
-    formdata.append("tt", "c"); // concepts
+    formdata.append("tt", "a"); // concepts
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
