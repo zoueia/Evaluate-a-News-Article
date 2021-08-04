@@ -25,6 +25,8 @@
 │    │
 │    └── server
 │        └── index.js # express server.
+│        └── APIcall.js # express server.
+│        └── mockAPI.js # express server.
 └── __test__ 
         └── handleSubmit.test.js # tests handleSubmit function .
         └── nameChecker.test.js # tests nameChecker function .
