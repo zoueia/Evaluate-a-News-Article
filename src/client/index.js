@@ -1,5 +1,6 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { polarityChecker } from "./js/polarityChecker"
 
 import './styles/resets.scss'
 import './styles/base.scss'
@@ -13,5 +14,7 @@ alert("I EXIST")
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    polarityChecker    
 }
+
